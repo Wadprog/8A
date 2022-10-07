@@ -1,0 +1,45 @@
+{
+  "name": "8a",
+  "version": "1.0.0",
+  "description": "Store management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cm": "cz",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wadprog/8A.git"
+  },
+  "keywords": [
+    "Store",
+    "management",
+    "system"
+  ],
+  "author": "Wadson Vaval",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wadprog/8A/issues"
+  },
+  "homepage": "https://github.com/Wadprog/8A#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
