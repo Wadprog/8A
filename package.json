@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "test:client": "npm run test --prefix client",
     "cm": "cz",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "lint:server": "npm run lint --prefix server",
+    "lint:client": "npm run lint --prefix client"
   },
   "repository": {
     "type": "git",
