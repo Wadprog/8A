@@ -1,0 +1,32 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "entity": "employee",
+    "service": "employee",
+    "secret": "zSr9MhPsB8FhQSfV9oAMOSnlIKs=",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "mssql": "mssql://root:password@localhost:1433/8_a_api"
+}
